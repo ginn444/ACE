@@ -69,6 +69,8 @@ Your CSV file should include the following headers:
 Match Name, Source File, Start Position, End Position, Size (cM), SNPs, Y-Haplogroup, mtDNA, Surnames
 ```
 
+**Note**: You can generate the required triangulation CSV file using the [DNA Triangulation Calculator](https://dnatriangulationcalculator.netlify.app), which allows you to export triangulated matches in the correct format for use with ACE.
+
 #### Required Fields:
 - **Match Name**: Name of the DNA match
 - **Start Position**: Segment start position (Mb)
