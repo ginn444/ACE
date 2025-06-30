@@ -154,26 +154,6 @@ export function ResultsDisplay({ results, gedcomFileName, triangulationFileName 
               </div>
             </div>
 
-            <div className="px-6 py-4 bg-gray-50">
-              <h4 className="text-sm font-medium text-gray-700 mb-2 flex items-center">
-                <Users size={16} className="mr-2" />
-                Triangulated Matches
-              </h4>
-              <div className="flex flex-wrap gap-2">
-                {result.matches.map((match, matchIndex) => (
-                  <span
-                    key={matchIndex}
-                    className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-white border border-gray-200"
-                  >
-                    {match.matchName}
-                    <span className="ml-1 text-gray-500">
-                      ({match.sizeCM}cM)
-                    </span>
-                  </span>
-                ))}
-              </div>
-            </div>
-
             <div className="p-6">
               <h4 className="text-lg font-semibold text-gray-900 mb-4">
                 Suggested Common Ancestors
