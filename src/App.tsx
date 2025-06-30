@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import { Dna, GitBranch, Sparkles } from 'lucide-react';
+import { Dna, GitBranch, Sparkles, RotateCcw } from 'lucide-react';
 import { FileUpload } from './components/FileUpload';
 import { ProcessingStatus } from './components/ProcessingStatus';
 import { ResultsDisplay } from './components/ResultsDisplay';
@@ -133,6 +133,19 @@ function App() {
               currentStep={currentStep}
               error={error}
             />
+
+            {/* Reset Button - Only show when there's an error */}
+            {processingState === 'error' && (
+              <div className="flex justify-center">
+                <button
+                  onClick={resetAnalysis}
+                  className="flex items-center space-x-2 px-6 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors shadow-sm"
+                >
+                  <RotateCcw size={20} />
+                  <span>Reset and Try Again</span>
+                </button>
+              </div>
+            )}
 
             {/* CSV Format Guide */}
             <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
