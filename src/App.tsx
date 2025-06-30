@@ -209,13 +209,27 @@ function App() {
       {/* Footer */}
       <footer className="bg-white border-t border-gray-200 mt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="text-center text-gray-600">
-            <p>
-              Powered by the Ancestral Convergence Engine (ACE) algorithm
-            </p>
-            <p className="text-sm mt-2">
-              Blending DNA segment triangulation, ancestral tree topology, and pattern recognition
-            </p>
+          <div className="flex flex-col items-center space-y-4">
+            <div className="text-center text-gray-600">
+              <p>
+                Powered by the Ancestral Convergence Engine (ACE) algorithm
+              </p>
+              <p className="text-sm mt-2">
+                Blending DNA segment triangulation, ancestral tree topology, and pattern recognition
+              </p>
+            </div>
+            <a
+              href="https://bolt.new/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-opacity hover:opacity-80"
+            >
+              <img
+                src="https://github.com/stackblitz/bolt.new/blob/main/public/built-with-bolt-badge.png?raw=true"
+                alt="Built with Bolt.new"
+                className="h-8 w-auto"
+              />
+            </a>
           </div>
         </div>
       </footer>
